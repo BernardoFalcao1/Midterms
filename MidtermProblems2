@@ -1,0 +1,19 @@
+public class MidtermProblems {
+
+    public static String difference(int a, int b) {
+        
+    	int diff = Math.abs(a - b);
+        
+        if (diff == 0) {
+            return "EQUAL";
+        } else if (a > b) {
+            return "a is bigger by " + diff;
+        } else {
+            return "b is bigger by " + diff;
+        }
+    }
+    
+    public static void main(String[] args) {
+    	
+    }
+}
