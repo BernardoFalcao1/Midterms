@@ -1,0 +1,31 @@
+
+public class MidtermProblems {
+
+	
+	
+	public static String replaceFirst(String s, char c) {
+		 
+		//Special Case
+		//This null case is super interesting being the only string that you can use == rather than .equals
+		if( s == null ) {
+			return  s; 
+		}
+		if (s .equals("")) {
+			return s; 
+		}
+		s = s.replace(s.charAt(0), c); 
+		
+		return s; 
+	}
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		String test; 
+		test = replaceFirst(null, 'k'); 
+		System.out.println(test);
+	}
+
+}
