@@ -1,0 +1,36 @@
+
+public class MidtermProblems {
+
+	public static int sumAll (int a, int b ) {
+		int result = 0; 
+		
+		
+		
+		if( b > a ) { 
+			for (int i=a; i <= b; i++) { 
+				result += i ; 
+				
+		}	
+		}
+		if ( a > b ) {
+			for (int i=b ; i <=a; i++) {
+				result +=i; 
+			}
+		}
+		if ( a == b) {
+			result = a * 2;  
+		}
+		
+		
+		
+		return result; 
+	}
+	
+	
+	
+	
+	public static void main (String[] args) {
+		System.out.println(sumAll(-5,-3));
+		
+	}
+}
