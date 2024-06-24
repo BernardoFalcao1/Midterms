@@ -1,0 +1,41 @@
+
+public class MidtermProblems {
+
+	
+	public static String odds(int a) {
+		String value = ""; 
+	
+		
+		
+		if ( a > 0) {
+			
+			for(int i = 1; i <= a; i++) {
+			
+				
+				if ( i%2 !=0) {
+				
+					value += i+","; 
+			}
+			
+		}
+		}
+		else if (a ==0) {
+			value = ""; 
+		}
+		else {
+		value = "NONE";
+		}
+		
+		if (a>0) {
+		value = value.substring(0,value.length()-1); 
+		}
+		
+		return value; 
+	}
+	
+
+	
+	public static void main (String[] args) {
+		System.out.println(odds(4));
+	}
+}
